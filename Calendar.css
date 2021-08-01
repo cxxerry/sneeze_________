@@ -1,0 +1,87 @@
+@charset "UTF-8";
+body{
+  margin :50px 10px 10px 10px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+
+  text-decoration:none;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  min-height: 100vh;
+}
+.calendar{
+  width:600px;
+  margin:50px;
+  align-items: center;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.year-month{
+  display: flex;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  display: flex;
+  border: 1px solid #333333;
+  border-radius: 5px;
+}
+
+.nav-btn{
+  width:30px;
+  height: 25px;
+  cursor:pointer;
+}
+
+.go-today{
+  width:50px;
+
+}
+
+.days{
+  display: flex;
+  margin: 25px 0 10px;
+  margin-bottom: 0;
+}
+
+.day{
+  width: calc(100% / 7);    //너비는 100% /7로 계산해서 할당
+  text-align: center;
+  border-top: 1px solid #333333;
+  border-right: 1px solid #333333;
+}
+
+.dates {
+  margin: 0px;
+  display: flex;
+  flex-flow: row wrap;
+  height: 300px;
+  border-top: 1px solid #333333;
+  border-right: 1px solid #333333;
+}
+
+.date {
+  width: calc(100% / 7);
+  padding: 15px;
+  text-align: right;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #333333;
+}
+
+.day:nth-child(7n + 1), .date:nth-child(7n + 1) {   //:nth-child()활용하면 일요일 색 변경 가능
+  color: #D13E3E;
+}
+
+.day:nth-child(7n),
+.date:nth-child(7n) {   //:nth-child()활용해서 토요일 색 변경
+  color: #396EE2;
+}
