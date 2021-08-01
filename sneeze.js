@@ -1,7 +1,7 @@
 $(document).ready(function(){
   var d = new Date();
   var n = d.getHours();
-  if(n > 21 || n < 6){
+  if(n > 25|| n < 6){
     document.querySelector('body').style.backgroundColor = '#232323';
     document.querySelector('body').style.color = 'white';
     var alist = document.querySelectorAll('a');
