@@ -1,0 +1,35 @@
+@charset "UTF-8";
+body{
+margin :10px 10px 10px 10px;
+padding: 0px;
+text-decoration:none;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+#home_emozi{
+  margin : 20px 0px 0px 0px;
+}
+
+#home_menu{
+  margin-top:70px;
+  text-align:center;
+  font-size: 50px;
+  color : black;
+}
+a{
+  text-decoration: none;
+  line-height: 1.5em;
+}
+#to_do_container{
+  display : grid;
+  grid-template-rows: 20% 1fr;
+  height : 100vh;
+}
+#to_do_top{
+  display : grid;
+  grid-template-rows: 25% 1fr;
+}
+#to_do_header{
+  display : grid;
+  grid-template-columns: 35% 1fr;
+}

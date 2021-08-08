@@ -2,16 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="Calendar.css">
-    <link rel="stylesheet" type="text/css" href="sneeze.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="todolist.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <title>Sneeze Calendar</title>
+    <title>Sneeze Todolist</title>
   </head>
   <body>
     <div class = "container">
@@ -45,7 +43,7 @@
 
       </div>
       <div class = "main_header">
-        calendar
+        to do list
       </div>
       <div class = "user">
         <div class = "emozi_zone">
@@ -58,34 +56,19 @@
         </div>
       </div>
       <div class = "main_main">
-    <div class="calendar">
-      <div class="header" >
-        <div class="year-month" ></div>
-        <div class="nav">
-          <button class="nav-btn go-prev" onclick="prevMonth()">&lt;</button>
-          <button class="nav-btn go-today" onclick="goToday()">Today</button>
-          <button class="nav-btn go-next" onclick="nextMonth()">&gt;</button>
+        <div id = "todo_list">
         </div>
-      </div>
-
-      <div class="main">
-        <div class="days">
-          <div class="day">일</div>
-          <div class="day">월</div>
-          <div class="day">화</div>
-          <div class="day">수</div>
-          <div class="day">목</div>
-          <div class="day">금</div>
-          <div class="day">토</div>
+        <div id = "todo_input">
+          <div id = "todo_input_textboxgrid">
+          <input type="text" id="todo_input_textbox">
         </div>
-        <div class="dates">
-          <div class="date"></div>
+          <div id = "todo_input_buttongrid">
+          <input type="button" id="todo_input_button" onclick="listAddClick();">
+        </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-</body>
-<script src="calendar.js"></script>
-<script src="sneeze.js"></script>
+  </body>
+  <script src = "todolist.js"></script>
+  <script src = "sneeze.js"></script>
 </html>
