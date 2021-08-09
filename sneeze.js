@@ -4,6 +4,7 @@ $(document).ready(function(){
   if(n > 19 || n < 6){
     document.querySelector('body').style.backgroundColor = '#232323';
     document.querySelector('body').style.color = 'white';
+    document.getElementById('menubar_img').src='img/menubar_n.png';
     var alist = document.querySelectorAll('a');
     var i = 0;
     while (i < alist.length) {

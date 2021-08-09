@@ -3,18 +3,63 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="sn.css">
+    <link rel="stylesheet" type="text/css" href="todolist.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src = "sneeze.js"></script>
-    <title></title>
+    <title>Sneeze Weather</title>
   </head>
-
-
   <body>
+    <div class = "container">
+      <div class = "menu">
+        <div id="myNav" class="overlay">
 
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="todolist.html">ToDoList</a>
+    <a href="calendar.html">Calendar</a>
+    <a href="weather.html">Weather</a>
+    <a href="mypage.html">MyPage</a>
+  </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<div id = "menubar"><img id = "menubtn" src = "img/menubar.png" onclick="openNav()" width="20%"></div>
+      <div id = "web_menulist">
+        <ul>
+          <li><a href = "todolist.html">ToDoList</a></li>
+          <li><a href = "calendar.html">Calendar</a></li>
+          <li>Weather</li>
+          <li><a href = "mypage.html">MyPage</a></li>
+        </ul>
+      </div>
+      </div>
+      <div class = "date_today">
+
+      </div>
+      <div class = "main_header">
+        Weather
+      </div>
+      <div class = "user">
+        <div class = "emozi_zone">
+          <img id = "emozi" src = "img/home/emozi_hoon.png">
+        </div>
+        <div class = "user_info">
+          이재훈<br>
+          1999.04.04<br>
+          @hoon247
+        </div>
+      </div>
+      <div class = "main_main">
+        weather
+      </div>
+    </div>
   </body>
+  <script src = "sneeze.js"></script>
 </html>

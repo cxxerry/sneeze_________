@@ -4,7 +4,6 @@ $(document).ready(function(){
   if(n > 19 || n < 6){
     document.getElementById('todo_input_textbox').style.color = 'white';
     document.getElementById('todo_input_button').style.borderColor = 'white';
-    document.getElementById('menubar_img').src='img/menubar_n.png';
   }
   else{
     document.getElementById('todo_input_textbox').style.color = 'black';
