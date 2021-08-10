@@ -81,9 +81,7 @@ font-family: 'Roboto Condensed', sans-serif;
 #menubtn{
   display:none;
 }
-#web_menulist{
-  line-height:22px;
-}
+
 
 /*---------------모바일최적화---------------*/
 @media(max-width:550px){
