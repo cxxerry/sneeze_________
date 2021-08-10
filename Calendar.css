@@ -39,6 +39,7 @@
 .days{
   display: flex;
   margin: 25px 0 10px;
+  text-align: center;
 }
 
 .day{
@@ -54,13 +55,15 @@
   grid-template-columns: repeat(7, 1fr);
   height: 300px;
   width:100%;
+  text-align: right;
+
   border-top: 2px solid #333333;
   border-right: 2px solid #333333;
 }
 
 .date {
-  width: calc(662% / 7);
-  padding-right: 3px;
+  width: calc(690% / 7);
+
   border-bottom: 2px solid #333333;
   border-left: 2px solid #333333;
 }
@@ -83,12 +86,12 @@
 
 .today::before {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 40%;
   transform: translate(-50%, -50%);
   z-index: -1;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   display: block;
   background-color: #FF0000;
   border-radius: 50%;
