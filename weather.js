@@ -31,7 +31,7 @@ $.getJSON('https://api.openweathermap.org/data/2.5/weather?id=1843564&appid=7ca1
     $('.chighTemp').append($maxTemp);
     $('.cTemp').append($cTemp);
     $('h1').append($cDate);
-    $('.weather_icon').prepend('<img src="http://openweathermap.org/img/wn/'+$wIcon+'.png">');
+    $('.weather_icon').prepend('<img src="https://openweathermap.org/img/wn/'+$wIcon+'.png">');
     $('.cHum').append($cHum);
 
 
