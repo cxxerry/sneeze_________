@@ -1,0 +1,68 @@
+.main_main{
+  margin:30px;
+}
+.weather-container{
+  margin:50px;
+}
+.weather_box3{
+  margin-top: 10px;
+}
+.img{
+  width:130px;
+}
+@media(min-width:551px){
+  .weather-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #water{
+    height:60%;
+  }
+}
+@media(max-width:550px) {
+  #water{
+    height:40%;
+    padding-top:20px;
+  }
+  .weather-container{
+    margin-top: 0px;
+    margin-bottom:10px;
+  }
+  .contents{
+    margin-top:0px;
+  }
+  .weather-box3{
+    margin-top: 20px;
+  }
+}
+.weather_box1 {
+    position: relative;
+    top: 10%;
+    margin: 0px 1vw;
+}
+.weather_box2{
+  position: relative;
+  top: 10%;
+  margin: 0px 1vw;
+}
+.weather_icon {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    padding: 0;
+    display:inline;
+}
+.weather_box3{
+  position: relative;
+  top: 10%;
+  margin: 0px 1vw;
+}
+.contents{
+  margin-top: 50px;
+}
+
+/* ------------모바일 최적화------------ */
+#water{
+  width:110px;
+  padding-left:20px;
+}
