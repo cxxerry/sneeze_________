@@ -3,7 +3,7 @@ $.getJSON('파일경로',function(data){
   //data로 할일 ...
 });
 */
-$.getJSON('http://api.openweathermap.org/data/2.5/weather?id=1843564&appid=7ca1574eb11d651558b11b3dcd9d5670&units=metric',function(data){
+$.getJSON('https://api.openweathermap.org/data/2.5/weather?id=1843564&appid=7ca1574eb11d651558b11b3dcd9d5670&units=metric',function(data){
 //data로 할일 ...s
 //alert(data.list[0].main.temp_min);
 var $minTemp = data.main.temp_min;      //변수명 minTemp인 최저온도 저장
@@ -36,4 +36,4 @@ $('.cHum').append($cHum);
 
 
 });
-//<img src=" http://openweathermap.org/img/wn/10d@2x.png">
+//<img src=" https://openweathermap.org/img/wn/10d@2x.png">
