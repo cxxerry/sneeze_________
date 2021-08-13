@@ -1,8 +1,7 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="sneeze.css">
     <link rel="stylesheet" type="text/css" href="weather.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Sneeze Weather</title>
   </head>
   <body>
@@ -60,26 +59,36 @@
       </div>
 
       <div class = "main_main">
-       <h1> Now      </h1>
+       <h1> Now  Incheon     </h1>
        <div class="contents" style="margin-top:10px;">
          <div class="weather-container">
            <!-- 현재 온도, 아이콘 -->
             <div class="weather_box1">
-             <img class="weather_icon">
-             <div class="cTemp"> Temperature :   </div>
-           </div>
+              <div id="weather_icon" style ="width:150px;">  <br></div>
+            </div>
+            <div class="weather_box1_1">
+               <span class="chighTemp"><strong>Max Temp:  </strong></span> °C
+            </div>
+
 
           <!-- 습도 -->
            <div class="weather_box2">
-             <img id="water" src="img/weather/water.png">
-             <div class="cHum"> Humidity:   </div>%
+          <img id="water" src="img/weather/water.png" style="width:100px;"> <br><br>
+           </div>
+           <div class="weather_box2_1">
+
+              <span class="cTemp"><strong>Temperature :  </strong> </span>°C
            </div>
 
           <!-- 최고, 최저 온도 -->
-           <div class="weather_box3" style="margin-top:10px;">
-            <div class="clowTemp">최저 온도:  </div>
-             <div class="chighTemp">최고 온도:  </div>
-           </div>
+           <div class="weather_box3" style="padding-top:90px;">
+
+             <span class="clowTemp"><strong>Min Temp:  </strong></span> °C  <br>
+
+          </div>
+          <div class="weather_box3_1">
+            <span class="cHum"><strong> Humidity:   </strong></span>%
+         </div>
 
       </div>
     </div>

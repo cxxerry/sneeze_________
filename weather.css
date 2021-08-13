@@ -2,55 +2,73 @@
   margin:30px;
 }
 .weather-container{
-  margin:50px;
-}
-.weather_box3{
-  margin-top: 10px;
-}
-.img{
-  width:130px;
-}
-@media(min-width:551px){
-  .weather-container{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  #water{
-    height:60%;
-  }
-}
-@media(max-width:550px) {
-  #water{
-    height:40%;
-    padding-top:20px;
-  }
-  .weather-container{
-    margin-top: 0px;
-    margin-bottom:10px;
-  }
-  .contents{
-    margin-top:0px;
-  }
-  .weather-box3{
-    margin-top: 20px;
-  }
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr ;
+  margin-left: 30px;
 }
 .weather_box1 {
     position: relative;
-    top: 10%;
+    top: 50%;
     margin: 0px 1vw;
+    text-align: center;
+    font-size: 25px;
+}
+.weather_box1_1{
+  padding-top: 200px;
+  font-size: 30px;
+  text-align: center;
 }
 .weather_box2{
   position: relative;
   top: 10%;
   margin: 0px 1vw;
+  padding-top: 210px;
+  text-align: center;
+  font-size: 30px;
 }
-.weather_icon {
+.weather_box2_1{
+  font-size: 30px;
+  text-align: center;
+}
+.weather_box3{
+      position: relative;
+      top: 10%;
+      margin: 0px 1vw;
+      padding-top:70px;
+      text-align: center;
+      font-size: 30px;
+      padding-top: 30px;
+}
+.weather_box3_1{
+  font-size: 30px;
+  text-align: center;
+}
+.img{
+  width:100px;
+  height: 100px;
+}
+
+
+@media(min-width:551px){
+  .weather-container{
+    display:grid;
+        grid-template-rows: 1fr 1fr;
+  }
+  #water{
+    height:55%;
+  }
+}
+
+#weather_icon {
     width: 150px;
     height: 150px;
     margin: 0 auto;
     padding: 0;
-    display:inline;
+}
+#weather_icon > img{
+    width: 120px;
+    height: 120px;
 }
 .weather_box3{
   position: relative;
@@ -62,7 +80,21 @@
 }
 
 /* ------------모바일 최적화------------ */
-#water{
-  width:110px;
-  padding-left:20px;
+@media(max-width:550px) {
+  #water{
+    height:50%;
+    padding-top:20px;
+  }
+  .weather-container{
+    margin:0;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr ;
+    }
+  .contents{
+    margin-top:0px;
+  }
+  .weather-box3{
+    margin-top: 5px;
+  }
 }
